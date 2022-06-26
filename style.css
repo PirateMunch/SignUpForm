@@ -1,0 +1,78 @@
+/*outside fonts from google*/
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto&family=Ubuntu:ital,wght@0,400;1,300&display=swap");
+/* font variables */
+/* define primary colors */
+
+html, body, .wrapper{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  background-image: url('jellyFish.jpg');
+  background-size: cover;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  margin-top: 30%;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  color: white;
+  background-color: aqua;
+  font-size: 8vw;
+  padding: 2%;
+}
+
+.right {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+}
+
+article {
+  font-size: 24px;
+  height: 35%;
+  background-color: #cafafa;
+}
+
+.wrap2 {
+  height: 35%;
+}
+
+.box1 {
+  display: flex;
+}
+
+.box2, .box3, .box4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.name1, .name2, .email, .number, .password, .confirm 
+  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+
+  color: red;
+}
+
+.bottom {
+  height: 30%;
+  background-color: #cafafa;
+}
