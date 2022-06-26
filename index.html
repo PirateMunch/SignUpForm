@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <div class="left">
-        <section>
+        <section class="sect">
            Logo here..
         </section>
         </div>
@@ -26,27 +26,28 @@
                 </p>
             </article>
             <div class="wrap2">
-            <form action="" method="get" class="signup">
+            <form action="" method="post" class="signup">
                 <div class="signup">
+                    <div class="shadow">
                     <div class="box1">Lets do this!</div>
                 <div class="box2">
                     <div class="name1">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" autofocus>
                     </div>
                     <div class="name2">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" autofocus>
                     </div>
                 </div>
                 <div class="box3">
                     <div class="email">
                     <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" autofocus>
                     </div>
                     <div class="number">
                     <label for="number">PHONE NUMBER</label>
-                    <input type="number" name="number" id="number">
+                    <input type="number" name="number" id="number" autofocus>
                     </div>
                 </div>
                 <div class="box4">
@@ -59,13 +60,13 @@
                     <input type="password" name="confirm" id="confirm" required>
                 </div>
                 </div>
+                    </div>
+                </div>
+                <div class="box5">
+                    <button type="submit" class="submit">Create Account</button>
+                    <p>Already have an account? Log in!</p>
                 </div>
             </form>
-            </div>
-            <div class="bottom">
-                <button>Create Account</button>
-                <p>Already have an account? Log in!</p>
-                
             </div>
             </div>
     </div>

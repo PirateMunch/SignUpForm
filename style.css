@@ -1,13 +1,12 @@
 /*outside fonts from google*/
 @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto&family=Ubuntu:ital,wght@0,400;1,300&display=swap");
-/* font variables */
-/* define primary colors */
 
 html, body, .wrapper{
   height: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Calligraffitti' serif;
 }
 
 .wrapper {
@@ -26,53 +25,83 @@ html, body, .wrapper{
 
 section {
   display: flex;
-  margin-top: 30%;
+  margin-top: 20%;
   justify-content: center;
   height: fit-content;
   width: 100%;
-  color: white;
-  background-color: aqua;
   font-size: 8vw;
   padding: 2%;
+  color: white;
+}
+
+.sect {
+  background-color: aqua; opacity: 0.6;
 }
 
 .right {
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: 60%;
   flex-direction: column;
+  background-color: aqua;
 }
 
 article {
-  font-size: 24px;
-  height: 35%;
-  background-color: #cafafa;
+  font-size: 30px;
+  height: 25%;
+  padding-left: 5%;
+  padding-top: 10%;
+  padding-right: 5%;
 }
-
 .wrap2 {
-  height: 35%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .box1 {
-  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 2%;
 }
 
 .box2, .box3, .box4 {
   display: flex;
-  justify-content: space-evenly;
+  gap: 20%;
+  padding-top: 2%;
 }
 
-.name1, .name2, .email, .number, .password, .confirm 
+.name1, .name2, .email, .number, .password, .confirm
   {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin: 20px;
-
-  color: red;
 }
 
-.bottom {
-  height: 30%;
-  background-color: #cafafa;
+.submit {
+  display: flex;
+  width: fit-content;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 10%;
+  background-color: blue;
+  color: white;
+  font-weight: 900;
+  font-size: large;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.box5 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  font-weight: 500;
+  font-size: large;
+}
+
+.shadow {
+  padding-left: 5%;
+  padding-bottom: 5%;
+  background-color: white !important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
