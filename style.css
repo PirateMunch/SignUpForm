@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto&family=Ubuntu:ital,wght@0,400;1,300&display=swap");
 
 html, body, .wrapper{
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -25,17 +27,21 @@ html, body, .wrapper{
 
 section {
   display: flex;
+  flex-wrap: nowrap;
   margin-top: 20%;
   justify-content: center;
-  height: fit-content;
+  height: 20%;
   width: 100%;
-  font-size: 8vw;
+  font-size: 6vw;
+  font-weight: 600;
   padding: 2%;
   color: white;
+  background-color: rgb(201, 235, 230, 0.2); 
 }
 
-.sect {
-  background-color: aqua; opacity: 0.6;
+section>p {
+  align-self: center;
+  padding-left: 5%;
 }
 
 .right {
@@ -43,12 +49,13 @@ section {
   height: 100vh;
   width: 60%;
   flex-direction: column;
-  background-color: aqua;
+  background-color: rgb(201, 235, 230);
 }
 
 article {
+  display: flex;
+  flex-direction: column;
   font-size: 30px;
-  height: 25%;
   padding-left: 5%;
   padding-top: 10%;
   padding-right: 5%;
@@ -61,18 +68,21 @@ article {
   font-size: 28px;
   font-weight: 600;
   padding-top: 2%;
+  color: rgb(35, 35, 90);
 }
 
 .box2, .box3, .box4 {
   display: flex;
   gap: 20%;
   padding-top: 2%;
+  font-size: smaller;
 }
 
 .name1, .name2, .email, .number, .password, .confirm
   {
   display: flex;
   flex-direction: column;
+  color: rgb(35, 35, 90);
 }
 
 .submit {
@@ -83,11 +93,11 @@ article {
   padding-left: 4%;
   padding-right: 4%;
   border-radius: 10%;
-  background-color: blue;
+  background-color: rgb(35, 35, 90);
   color: white;
   font-weight: 900;
   font-size: large;
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 2%;
 }
 
@@ -104,4 +114,28 @@ article {
   padding-bottom: 5%;
   background-color: white !important;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input {
+  width: 100%;
+  padding: 3% 10%;
+  margin: 2%;
+}
+
+/*psuedo classes*/
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:active {
+  border: 2px solid rgb(154, 250, 135) !important;
+}
+
+input:focus:invalid {
+  border: none;
 }
